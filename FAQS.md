@@ -19,3 +19,7 @@ No. By all means feel free to use another CI tool if you wish. Make sure to make
 ### Does everything have to be deployed as containers?
 
 No. It is worth using containers, orchestrated through Kubernetes in some form but you might feel that other deployment approaches are better suited for certain aspects of the service.
+
+### The code bases don't seem to include Dockerfiles, why is that?
+
+Unfortunately the development teams have not yet been testing with Docker so if you need to containerise the applications you will need to create the Dockerfiles.

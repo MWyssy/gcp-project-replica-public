@@ -2,9 +2,9 @@
 
 ## 👩‍💻 Scenario
 
-The Pet Clinic have just created their new in house software for managing the clinic
+The Northcoders development teams have worked on creating a learning management system
 
-[JAMES PUT PICTURE HERE]
+![screenshot of learner application](./media/images/app_screenshot.png "screenshot of learner application")
 
 The development teams have been structured by the organisation such that one team has produced the frontend and a separate team have produced the backend.
 
@@ -14,32 +14,43 @@ The backend application is configured to talk to a relational database. Currentl
 
 #### Technologies
 
-* TBC
-* TBC
+* [Vite](https://vitejs.dev/)
+* [React](https://react.dev/)
+* HTML
+* CSS
 
 #### Repository
 
-JAMES PUT LINK HERE
+[https://github.com/northcoders/ce-team-project-frontend](https://github.com/northcoders/ce-team-project-frontend)
 
 ### Backend
 
 #### Technologies
 
-* TBC
-* TBC
+* Java
+* [Maven](https://maven.apache.org/)
+* [Spring Boot](https://spring.io/projects/spring-boot)
+* Spring Actuator
+* Spring JDBC for database access
 
 #### Repository
 
-JAMES PUT LINK HERE
+[https://github.com/northcoders/ce-team-project-backend](https://github.com/northcoders/ce-team-project-backend)
 
 
 ## 📈 Objective
 
-TBC
+Your primary objective, as a team, is to get the applications and supporting services deployed to AWS cloud.
+
+You should make sure to utilse the various topics that have been covered during the programme.
+
+Also be considerate of the DevOps values - flow, feedback and continual learning. When making decisions, try to document which principle(s) of DevOps are impacted by those decisions.
 
 ## 🤔 Considerations
 
 * You will need to fork/copy the frontend and backend application repositories if you need to change them or add new files.
+
+* The applications don't currently have much logging in them. Adding logging and attempting to centralise the logs could be a good stretch goal. Something that has not yet been covered on the programme.
 
 ## 🏆 Minimum viable product
 
