@@ -2,7 +2,7 @@
 
 ## 👩‍💻 Scenario
 
-The Northcoders development teams have worked on creating a learning management system
+The Northcoders development teams have worked on creating a learner management system
 
 ![screenshot of learner application](./media/images/app_screenshot.png "screenshot of learner application")
 
