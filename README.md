@@ -2,7 +2,36 @@
 
 ## 👩‍💻 Scenario
 
-TBC
+The Pet Clinic have just created their new in house software for managing the clinic
+
+[JAMES PUT PICTURE HERE]
+
+The development teams have been structured by the organisation such that one team has produced the frontend and a separate team have produced the backend.
+
+The backend application is configured to talk to a relational database. Currently the backend team have been using an in-memory relational database when testing.
+
+### Frontend
+
+#### Technologies
+
+* TBC
+* TBC
+
+#### Repository
+
+JAMES PUT LINK HERE
+
+### Backend
+
+#### Technologies
+
+* TBC
+* TBC
+
+#### Repository
+
+JAMES PUT LINK HERE
+
 
 ## 📈 Objective
 
@@ -10,7 +39,7 @@ TBC
 
 ## 🤔 Considerations
 
-TBC
+* You will need to fork/copy the frontend and backend application repositories if you need to change them or add new files.
 
 ## 🏆 Minimum viable product
 
@@ -30,11 +59,11 @@ TBC
 
 * A presentation (using whichever presentation tool you wish) that shares:
     - Your ways of working such as how you distributed the work, who took up which responsibilities
-    - An visual overview of the architecture and tools you have utilised
+    - Tooling used and why you chose that tool (it was taught on the programme is not a valid reason)
+    - A visual overview of the architecture and tools you have utilised
     - Any code examples you wish to share
     - Challenges you experienced and how you overcame them
-
-* The presentation should be exported as a PDF and stored within one of your repositories
+    - The presentation should last around 5 to 6 mins
 
 
 ## 💰 Important notes on costs
