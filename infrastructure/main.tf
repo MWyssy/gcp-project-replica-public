@@ -7,3 +7,11 @@ module "container_registry" {
   key_name       = "gcp-pr-container-reg-key"
   keyring_name   = "gcp-pr-container-reg-keyring"
 }
+
+module "network" {
+  source = "./modules/network"
+
+  project_region = var.project_region
+  project_name   = var.project_name
+  network_name   = "gcp-pr-vpc"
+}
