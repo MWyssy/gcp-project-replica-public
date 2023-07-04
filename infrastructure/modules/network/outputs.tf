@@ -1,4 +1,7 @@
-output "subnet_IDs" {
-  value       = module.vpc.subnets_ids
-  description = "The IDs of the created subnets"
+output "network_id" {
+  value = google_compute_network.gcp_pr_vpc.name
+}
+
+output "subnetwork_id" {
+  value = google_compute_subnetwork.gcp_pr_vpc.name
 }
