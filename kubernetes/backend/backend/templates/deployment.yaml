@@ -15,14 +15,6 @@ spec:
       containers:
         - name: {{.Values.appName}}
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
           ports: 
             - containerPort: {{.Values.service.port}}
       imagePullSecrets:
