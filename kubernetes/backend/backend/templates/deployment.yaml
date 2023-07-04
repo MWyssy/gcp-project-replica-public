@@ -25,3 +25,5 @@ spec:
               port: http
           ports: 
             - containerPort: {{.Values.service.port}}
+      imagePullSecrets:
+      - name: "gcp-pr-sa@gcp-project-replica-391115.iam.gserviceaccount.com"
