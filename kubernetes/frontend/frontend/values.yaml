@@ -11,7 +11,7 @@ image:
 service:
   type: LoadBalancer
   port: 80
-  fwdPort: 5173
+  fwdPort: 80
   name: frontend-service
 
 metrics:
