@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: {{.Values.name}}
 spec:
-  replicas: {{ .Values.replicaCount }}
+  replicas: {{.Values.replicaCount}}
   selector:
     matchLabels:
       app: {{.Values.appName}}
@@ -17,5 +17,6 @@ spec:
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
           ports: 
             - containerPort: {{.Values.service.port}}
+              protocol: TCP
       imagePullSecrets:
       - name: artifact-registry

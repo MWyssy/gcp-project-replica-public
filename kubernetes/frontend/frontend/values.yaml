@@ -14,7 +14,7 @@ image:
 
 service:
   type: NodePort
-  port: 80
+  port: 5173
   fwdPort: 80
   name: frontend-service
 
