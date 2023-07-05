@@ -3,7 +3,6 @@ kind: Ingress
 metadata:
   name: gcp-pr-be-ingress
   annotations:
-    kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
     nginx.ingress.kubernetes.io/enable-cors: "true"
     nginx.ingress.kubernetes.io/cors-allow-origin: "http://34.160.50.79"
     nginx.ingress.kubernetes.io/cors-allow-methods: "GET, POST, PUT, DELETE, OPTIONS"
