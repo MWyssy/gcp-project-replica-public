@@ -11,13 +11,3 @@ spec:
       name: {{.Values.name}}
       port:
         number: {{.Values.service.port}}
-  rules:
-    - http:
-      paths:
-        - path: /backend/*
-          pathType: Prefix
-          backend:
-            service:
-              name: {{.Values.backend.name}}
-              port:
-                number: {{.Values.backend.port}}
