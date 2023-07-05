@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{.Values.appName}}
+  name: {{.Values.name}}
   namespace: default
   annotations:
     prometheus.io/port: {{.Values.metrics.port}}
@@ -17,9 +17,9 @@ spec:
       targetPort: {{.Values.service.fwdPort}}
       protocol: TCP
       name: {{.Values.service.name}}
-    - port: 9000
+    - port: 9001
       targetPort: {{.Values.service.port}}
       name: {{.Values.metrics.port}}
       protocol: TCP
   selector:
-    app: {{.Values.appName}}
+    app: {{.Values.name}}

@@ -1,21 +1,21 @@
 replicaCount: 1
 
-appName: gcp-pr-fe
+name: gcp-pr-fe
+appName: gcp-pr
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-fe/gcp-pr-fe
   repoImgVersion: :1.5
   pullPolicy: IfNotPresent
 
-serviceAccount:
-  create: true
-  annotations: {}
-  name: ""
-
 service:
   type: LoadBalancer
-  port: 5173
-  fwdPort: 80
+  port: 80
+  fwdPort: 5173
+  name: frontend-service
+
+metrics:
+  port: metrics-fe
 
 ingress:
   enabled: false

@@ -1,6 +1,7 @@
 replicaCount: 1
 
-appName: gcp-pr-be
+name: gcp-pr-be
+appName: gcp-pr
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-be/gcp-pr-be
@@ -10,11 +11,11 @@ image:
 service:
   type: ClusterIP
   port: 8080
-  name: main
+  name: backend-service
   fwdPort: 8080 
 
 metrics:
-  port: metrics
+  port: metrics-be
 
 ingress:
   enabled: false
