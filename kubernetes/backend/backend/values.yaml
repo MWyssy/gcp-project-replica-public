@@ -9,7 +9,7 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: LoadBalancer
+  type: NodePort
   port: 8080
   name: backend-service
   fwdPort: 8080 

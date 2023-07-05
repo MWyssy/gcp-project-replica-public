@@ -13,7 +13,7 @@ image:
   pullPolicy: IfNotPresent
 
 service:
-  type: LoadBalancer
+  type: NodePort
   port: 5173
   fwdPort: 80
   name: frontend-service
