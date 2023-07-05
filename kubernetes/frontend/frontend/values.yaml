@@ -5,7 +5,7 @@ appName: gcp-pr
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-fe/gcp-pr-fe
-  repoImgVersion: :1.15
+  repoImgVersion: :1.16
   pullPolicy: IfNotPresent
 
 service:
