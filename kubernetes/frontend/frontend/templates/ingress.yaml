@@ -4,6 +4,7 @@ metadata:
   name: gcp-pr-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
+    nginx.ingress.kubernetes.io/enable-cors: "false"
 spec:
   defaultBackend:
     service:
