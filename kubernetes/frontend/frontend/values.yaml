@@ -5,11 +5,11 @@ appName: gcp-pr
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-fe/gcp-pr-fe
-  repoImgVersion: :1.8
+  repoImgVersion: :1.9
   pullPolicy: IfNotPresent
 
 service:
-  type: NodePort
+  type: ClusterIP
   port: 5173
   fwdPort: 80
   name: frontend-service
