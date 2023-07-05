@@ -15,11 +15,11 @@ spec:
   ports:
     - port: {{.Values.service.port}}
       targetPort: {{.Values.service.fwdPort}}
-      protocol: TCP
+      protocol: HTTP
       name: {{.Values.service.name}}
     - port: 9000
       targetPort: {{.Values.service.fwdPort}}
       name: {{.Values.metrics.port}}
-      protocol: TCP
+      protocol: HTTP
   selector:
     app: {{.Values.name}}
