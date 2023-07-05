@@ -17,6 +17,6 @@ spec:
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
           ports: 
             - containerPort: {{.Values.service.port}}
-              protocol: HTTP
+              protocol: TCP
       imagePullSecrets:
       - name: artifact-registry
