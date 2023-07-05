@@ -3,10 +3,6 @@ replicaCount: 1
 name: gcp-pr-fe
 appName: gcp-pr
 
-backend: 
-  name: gcp-pr-be
-  port: 8080
-
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-fe/gcp-pr-fe
   repoImgVersion: :1.8
