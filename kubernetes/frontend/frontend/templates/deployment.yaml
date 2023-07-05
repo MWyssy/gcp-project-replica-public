@@ -7,10 +7,12 @@ spec:
   selector:
     matchLabels:
       app: {{.Values.appName}}
+      tier: frontend
   template:
     metadata:
       labels:
         app: {{.Values.appName}}
+        tier: frontend
     spec:
       containers:
         - name: {{.Values.name}}

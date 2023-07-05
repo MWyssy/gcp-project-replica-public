@@ -1,7 +1,7 @@
 replicaCount: 1
 
 name: gcp-pr-fe
-appName: gcp-pr-fe
+appName: gcp-pr
 
 backend: 
   name: gcp-pr-be

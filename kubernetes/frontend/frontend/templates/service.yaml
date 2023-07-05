@@ -22,4 +22,5 @@ spec:
       name: {{.Values.metrics.port}}
       protocol: TCP
   selector:
-    app: {{.Values.name}}
+    app: {{.Values.appName}}
+    tier: frontend
