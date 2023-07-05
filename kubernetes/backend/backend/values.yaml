@@ -1,7 +1,7 @@
 replicaCount: 1
 
 name: gcp-pr-be
-appName: gcp-pr
+appName: gcp-pr-be
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-be/gcp-pr-be
