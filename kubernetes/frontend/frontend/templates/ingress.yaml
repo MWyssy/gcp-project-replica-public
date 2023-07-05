@@ -5,17 +5,15 @@ metadata:
   annotations:
     kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
 spec:
+  defaultBackend:
+    service:
+      name: {{.Values.name}}
+      port:
+        number: {{.Values.service.port}}
   rules:
     - http:
       paths:
-        - path: /*
-          pathType: ImplementationSpecific
-          backend:
-            service:
-              name: {{.Values.name}}
-              port:
-                number: {{.Values.service.port}}
-        - path: /v2/*
+        - path: /backend/*
           pathType: ImplementationSpecific
           backend:
             service:

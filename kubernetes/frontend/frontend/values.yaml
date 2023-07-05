@@ -21,18 +21,6 @@ service:
 metrics:
   port: metrics-fe
 
-ingress:
-  enabled: false
-  className: ""
-  annotations: {}
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  tls: []
-
-
 autoscaling:
   enabled: true
   minReplicas: 1

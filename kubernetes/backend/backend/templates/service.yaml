@@ -18,7 +18,7 @@ spec:
       protocol: TCP
       name: {{.Values.service.name}}
     - port: 9001
-      targetPort: {{.Values.service.port}}
+      targetPort: {{.Values.service.fwdPort}}
       name: {{.Values.metrics.port}}
       protocol: TCP
   selector:
