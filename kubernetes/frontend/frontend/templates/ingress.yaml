@@ -19,6 +19,6 @@ spec:
           pathType: ImplementationSpecific
           backend:
             service:
-              name: {{.Values.name}}
+              name: {{.Values.backend.name}}
               port:
                 number: {{.Values.backend.port}}
