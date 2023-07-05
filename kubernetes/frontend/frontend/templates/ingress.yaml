@@ -12,13 +12,13 @@ spec:
           pathType: ImplementationSpecific
           backend:
             service:
-              name: {{.Values.name}}
+              name: {{.Values.appName}}
               port:
                 number: {{.Values.service.port}}
         - path: /v2/*
           pathType: ImplementationSpecific
           backend:
             service:
-              name: {{.Values.backend.name}}
+              name: {{.Values.appName}}
               port:
                 number: {{.Values.backend.port}}
