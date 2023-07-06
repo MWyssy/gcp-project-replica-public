@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: gcp-pr-ingress
   annotations:
+    kubernetes.io/ingress.class: "nginx"
     kubernetes.io/ingress.global-static-ip-name: "web-static-ip"
     ingress.kubernetes.io/enable-cors: "true"
     ingress.kubernetes.io/cors-allow-origin: "*"
