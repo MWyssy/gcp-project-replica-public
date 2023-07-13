@@ -19,7 +19,8 @@ spec:
   #       port:
   #         number: {{.Values.service.fePort}}
   rules:
-    - http:
+    - host: 34.160.50.79
+      http:
         paths:
           - pathType: Prefix
             path: "/gcp-pr-be.default.svc.cluster.local"
