@@ -27,6 +27,6 @@ spec:
             path: "/"
             backend:
               service:
-                name: {{.Values.name}}
+                name: {{.Values.feName}}
                 port:
-                  number: {{.Values.service.port}}
+                  number: {{.Values.service.fePort}}
