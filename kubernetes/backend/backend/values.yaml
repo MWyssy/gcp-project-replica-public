@@ -6,7 +6,7 @@ feName: gcp-pr-fe
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-be/gcp-pr-be
-  repoImgVersion: :1.1
+  repoImgVersion: :1.3
   pullPolicy: IfNotPresent
 
 service:
