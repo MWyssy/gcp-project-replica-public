@@ -15,3 +15,13 @@ variable "project_zone" {
   type        = string
   default     = "europe-west2-a"
 }
+
+variable "db_user_name" {
+  description = "Database Username"
+  type        = string
+}
+
+variable "db_password" {
+  description = "Database Password"
+  type        = string
+}

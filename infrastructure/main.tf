@@ -27,3 +27,16 @@ module "elastic_kubernetes" {
   subnetwork     = module.network.subnetwork_id
   node_count     = 1
 }
+
+module "relational_database" {
+  source = "./modules/relational-database"
+
+  project_region   = var.project_region
+  database_name    = "gcp-pr-database"
+  postgres_version = "POSTGRES_12"
+  profile_id       = "gcp-pr-database"
+  display_name     = "gcp-pr-database"
+
+  db_password  = var.db_password
+  db_user_name = var.db_user_name
+}

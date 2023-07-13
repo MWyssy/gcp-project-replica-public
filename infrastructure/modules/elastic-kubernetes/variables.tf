@@ -28,12 +28,4 @@ variable "node_count" {
   type        = number
 }
 
-variable "fe_domain_name" {
-  description = "The frontend domain"
-  type        = string
-}
 
-variable "be_domain_name" {
-  description = "The backend domain"
-  type        = string
-}
