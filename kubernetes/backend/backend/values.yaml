@@ -11,7 +11,7 @@ image:
 
 service:
   type: NodePort
-  port: 8080
+  port: 8000
   name: backend-service
   fwdPort: 8080 
   fePort: 5173
