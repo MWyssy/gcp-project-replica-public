@@ -19,8 +19,16 @@ spec:
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
           readinessProbe:
             httpGet:
-              path: /ready
+              path: /actuator.health
               port: {{.Values.service.port}}
+            initialDelaySeconds: 10
+            timeoutSeconds: 5
+          livenessProbe:
+            httpGet:
+              path: "/actuator/health"
+              port: {{.Values.service.port}}
+            initialDelaySeconds: 10
+            timeoutSeconds: 5
           ports: 
             - containerPort: {{.Values.service.port}}
               protocol: TCP
