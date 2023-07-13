@@ -31,7 +31,7 @@ spec:
           - pathType: Prefix
             path: "/"
             backend:
-            service:
-              name: {{.Values.feName}}
-              port:
-              number: {{.Values.service.fePort}}
+              service:
+                name: {{.Values.feName}}
+                port:
+                  number: {{.Values.service.fePort}}
