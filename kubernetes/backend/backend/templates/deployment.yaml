@@ -14,6 +14,9 @@ spec:
         app: {{.Values.appName}}
         tier: backend
     spec:
+      serviceAccountName: gcp-pr-sa
+      nodeSelector:
+        iam.gke.io/gke-metadata-server-enabled: "true"
       containers:
         - name: {{.Values.appName}}
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
