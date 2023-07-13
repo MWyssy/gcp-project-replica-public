@@ -26,5 +26,4 @@ module "elastic_kubernetes" {
   network        = module.network.network_id
   subnetwork     = module.network.subnetwork_id
   node_count     = 1
-
 }

@@ -31,3 +31,4 @@ resource "google_container_node_pool" "gcp_pr_nodes" {
     }
   }
 }
+

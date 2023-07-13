@@ -27,3 +27,13 @@ variable "node_count" {
   description = "Number of nodes in the cluster"
   type        = number
 }
+
+variable "fe_domain_name" {
+  description = "The frontend domain"
+  type        = string
+}
+
+variable "be_domain_name" {
+  description = "The backend domain"
+  type        = string
+}
