@@ -29,7 +29,7 @@ spec:
                 port:
                   number: {{.Values.service.port}}
           - pathType: Prefix
-            path: "/api"
+            path: "/api/*"
             backend:
               service:
                 name: {{.Values.beName}}
