@@ -22,13 +22,6 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: "/"
-            backend:
-              service:
-                name: {{.Values.name}}
-                port:
-                  number: {{.Values.service.port}}
-          - pathType: Prefix
             path: "/api/*"
             backend:
               service:
