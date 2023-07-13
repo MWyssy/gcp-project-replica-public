@@ -18,3 +18,13 @@ spec:
       name: {{.Values.name}}
       port:
         number: {{.Values.service.port}}
+  rules:
+    - http:
+        paths:
+          - pathType: Prefix
+            path: "/api"
+            backend:
+              service:
+                name: {{.Values.be-name}}
+                port:
+                  number: {{.Values.service.be-port}}

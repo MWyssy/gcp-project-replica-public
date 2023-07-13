@@ -10,7 +10,7 @@ image:
 
 service:
   type: NodePort
-  port: 8050
+  port: 8080
   name: backend-service
   fwdPort: 8080 
 
