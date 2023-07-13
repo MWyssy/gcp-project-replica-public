@@ -17,6 +17,10 @@ spec:
       containers:
         - name: {{.Values.appName}}
           image: {{.Values.image.repository}}{{.Values.image.repoImgVersion}}
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: {{.Values.service.port}}
           ports: 
             - containerPort: {{.Values.service.port}}
               protocol: TCP
