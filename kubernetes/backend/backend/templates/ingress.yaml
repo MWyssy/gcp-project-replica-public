@@ -17,7 +17,7 @@ spec:
     - http:
         paths:
           - pathType: Prefix
-            path: "/gcp-pr-be.default.svc.cluster.local"
+            path: "/api"
             backend:
               service:
                 name: {{.Values.name}}
