@@ -33,7 +33,7 @@ resource "google_database_migration_service_connection_profile" "gcp_pr_database
 
   postgresql {
     host     = google_sql_database_instance.gcp_pr_database.ip_address.0.ip_address
-    port     = 5433
+    port     = 5432
     username = google_sql_user.gcp_pr_database.name
     password = google_sql_user.gcp_pr_database.password
     ssl {
