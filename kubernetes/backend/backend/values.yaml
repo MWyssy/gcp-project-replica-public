@@ -2,6 +2,7 @@ replicaCount: 1
 
 name: gcp-pr-be
 appName: gcp-pr
+feName: gcp-pr-fe
 
 image:
   repository: europe-west2-docker.pkg.dev/gcp-project-replica-391115/gcp-pr-container-reg-be/gcp-pr-be
@@ -13,6 +14,7 @@ service:
   port: 8080
   name: backend-service
   fwdPort: 8080 
+  fePort: 5173
 
 metrics:
   port: metrics-be
