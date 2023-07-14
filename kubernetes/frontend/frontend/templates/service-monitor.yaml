@@ -6,6 +6,7 @@ metadata:
 spec:
   endpoints:
     - interval: 15s
+      path: /metrics
       port: {{.Values.metrics.port}}
       scheme: http
       scrapeTimeout: 14s
