@@ -15,4 +15,4 @@ spec:
       - default
   selector:
     matchLabels:
-      app.kubernetes.io/part-of: {{.Values.appName}}
+      app.kubernetes.io/part-of: {{.Values.name}}
