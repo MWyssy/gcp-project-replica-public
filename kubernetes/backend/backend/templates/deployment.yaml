@@ -24,13 +24,13 @@ spec:
             httpGet:
               path: /actuator/health
               port: {{.Values.service.port}}
-            initialDelaySeconds: 10
+            initialDelaySeconds: 40
             timeoutSeconds: 5
           livenessProbe:
             httpGet:
               path: "/actuator/health"
               port: {{.Values.service.port}}
-            initialDelaySeconds: 10
+            initialDelaySeconds: 40
             timeoutSeconds: 5
           ports: 
             - containerPort: {{.Values.service.port}}
