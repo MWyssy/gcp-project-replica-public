@@ -70,6 +70,7 @@ The entire infrastructure has been provisioned using terraform, which is all inc
 Remote State:
 
 > This will set up the remote state used by terraform.
+> Before running this, please make sure you have the **Cloud Storage** API enabled in your Google Cloud environment.
 
 - Change directory to _\_remote-state_: `$ cd _remote-state`
 - Initialise Terraform: `$ terraform init`
@@ -83,6 +84,16 @@ Core Infrastructure:
 > - Kubernetes Cluster via Kubernetes Engine (GKE)
 > - Cloud database and migration via Cloud SQL
 > - Container Registry's via Artifact Registry
+
+> Before you can set up the infrastructure, you have to ensure that the following API's have been enabled in your Google Cloud environment:
+>
+> - Compute Engine
+> - Artifact Registry
+> - Kubernetes Engine
+> - Database Migration
+> - Cloud SQL
+> - Identity and Access Management
+> - Service Management
 
 - Change directory to _infrastructure_: `$ cd ../infrastructure`
 - Initialise Terraform: `$ terraform init`
