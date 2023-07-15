@@ -7,7 +7,7 @@ resource "google_artifact_registry_repository" "gcp_pr_container_registry_fe" {
   kms_key_name = google_kms_crypto_key.gcp_pr_container_reg.id
 
   docker_config {
-    immutable_tags = true
+    immutable_tags = false
   }
 }
 
@@ -20,7 +20,7 @@ resource "google_artifact_registry_repository" "gcp_pr_container_registry_be" {
   kms_key_name = google_kms_crypto_key.gcp_pr_container_reg.id
 
   docker_config {
-    immutable_tags = true
+    immutable_tags = false
   }
 }
 

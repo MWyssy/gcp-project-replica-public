@@ -9,3 +9,7 @@ output "k8s_cluster_host" {
 output "project_region" {
   value = var.project_region
 }
+
+output "project_name" {
+  value = var.project_name
+}
