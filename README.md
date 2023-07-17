@@ -21,7 +21,7 @@ The backend application is configured to talk to a relational database. Currentl
 
 #### Repository
 
-[https://github.com/MWyssy-gcp-project-replica-frontend](https://github.com/MWyssy-gcp-project-replica-frontend)
+[https://github.com/MWyssy-gcp-project-replica-frontend-public](https://github.com/MWyssy-gcp-project-replica-frontend-public)
 
 ### Backend
 
@@ -35,7 +35,7 @@ The backend application is configured to talk to a relational database. Currentl
 
 #### Repository
 
-[https://github.com/MWyssy-gcp-project-replica-backend](https://github.com/MWyssy-gcp-project-replica-backend)
+[https://github.com/MWyssy-gcp-project-replica-backend-public](https://github.com/MWyssy-gcp-project-replica-backend-public)
 
 ## Infrastructure
 
